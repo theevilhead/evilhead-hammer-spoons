@@ -1,4 +1,4 @@
-local window = require("wm.window")
+local window = require("SimpleWindowManager.window")
 local M = {}
 
 -- Layout Definitions

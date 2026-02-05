@@ -1,4 +1,4 @@
-local config = require("wm.config")
+local config = require("SimpleWindowManager.config")
 local M = {}
 
 -- Disable animations globally based on config
