@@ -22,7 +22,18 @@ A collection of custom Spoons for [Hammerspoon](https://www.hammerspoon.org/).
    ln -s $(pwd)/SimpleWindowManager.spoon ~/.hammerspoon/Spoons/
    ```
 
-3. Configure it in your `~/.hammerspoon/init.lua`.
+3. Configure it in your `~/.hammerspoon/init.lua`:
+
+   ```lua
+   -- Load the SimpleWindowManager Spoon
+   hs.loadSpoon("SimpleWindowManager")
+
+   -- Bind default hotkeys (Cmd+Alt+Ctrl + arrows/etc)
+   spoon.SimpleWindowManager:bindHotkeys()
+
+   -- Start the manager
+   spoon.SimpleWindowManager:start()
+   ```
 
 ## Usage
 
